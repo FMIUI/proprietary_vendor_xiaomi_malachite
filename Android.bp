@@ -29533,6 +29533,7 @@ cc_prebuilt_binary {
 
 cc_prebuilt_binary {
     name: "mnld",
+    check_elf_files: false,
     owner: "xiaomi",
     target: {
         android_arm64: {
