@@ -1290,7 +1290,6 @@ PRODUCT_PACKAGES += \
     libmmagent \
     libmml \
     libmmlpqImpl \
-    libmnl \
     libmpbase \
     libmsbc_mtk \
     libmtk-fusion-ril-prop-vsim \
