@@ -858,13 +858,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/android.hardware.soundtrigger3-impl.so",
             ],
             shared_libs: [
-                "android.hardware.soundtrigger3-V3-ndk",
                 "libbase",
                 "libbinder_ndk",
                 "libutils",
                 "libcutils",
                 "libhardware",
-                "libaudio_aidl_conversion_common_ndk",
                 "liblog",
                 "libc++",
                 "libc",
@@ -9342,7 +9340,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -9395,7 +9393,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -11393,7 +11391,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libformatter",
+    name: "libformatter_mtk",
+    stem: "libformatter",
     owner: "xiaomi",
     strip: {
         none: true,
