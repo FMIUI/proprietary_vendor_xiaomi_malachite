@@ -29818,3 +29818,26 @@ install_symlink {
     installed_location: "etc/camera/beauty/libTrueSight.so",
     symlink_target: "/vendor/lib64/libTrueSight.so",
 }
+
+android_app_import {
+    name: "MtkImsService",
+    owner: "xiaomi",
+    apk: "proprietary/system/priv-app/ImsService/ImsService.apk",
+    privileged: true,
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-com.mediatek.ims.xml",
+    src: "proprietary/system/etc/permissions/privapp-permissions-com.mediatek.ims.xml",
+    sub_dir: "permissions",
+}
+
+prebuilt_etc {
+    name: "com.mediatek.ims.config.xml",
+    src: "proprietary/system/etc/sysconfig/com.mediatek.ims.config.xml",
+    sub_dir: "sysconfig",
+}
